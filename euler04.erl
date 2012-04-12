@@ -1,0 +1,1 @@
+lists:max([Z || Z <- [X*Y || X <- lists:seq(1, 999), Y <- lists:seq(1, 999)], lists:reverse(erlang:integer_to_list(Z)) == erlang:integer_to_list(Z)]).
